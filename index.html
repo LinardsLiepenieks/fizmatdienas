@@ -29,48 +29,50 @@
 </head>
 
 <body>
-    <header class=" masthead p-3 m-0">
+    <div class="bgimg">
+        <header class=" masthead p-3 m-0">
 
-        <!---Links to other years -list--->
-        <div class="years-container d-flex align-items-center float-right m-2">
-            <label for="years" class="d-flex m-1 years-label">Gads:</label>
-            <select name="years" id="years" onchange="location = this.value;" class="text-center years-select p-1">
+            <!---Links to other years -list--->
+            <div class="years-container d-flex align-items-center float-right m-2">
+                <label for="years" class="d-flex m-1 years-label">Gads:</label>
+                <select name="years" id="years" onchange="location = this.value;" class="text-center years-select p-1">
 
-                <option value="http://fizmatdienas.lv/2006/" class="years-option">2006</option>
-                <option value="http://fizmatdienas.lv/2008/" class="years-option">2008</option>
-                <option value="http://fizmatdienas.lv/2009/" class="years-option">2009</option>
-                <option value="http://fizmatdienas.lv/2010/" class="years-option">2010</option>
-                <option value="http://fizmatdienas.lv/2011/" class="years-option">2011</option>
-                <option value="http://fizmatdienas.lv/2012/" class="years-option">2012</option>
-                <option value="http://fizmatdienas.lv/2013/" class="years-option">2013</option>
-                <option value="http://fizmatdienas.lv/2014/" class="years-option">2014</option>
-                <option value="http://fizmatdienas.lv/2015/" class="years-option">2015</option>
-                <option value="http://fizmatdienas.lv/2016/" class="years-option">2016</option>
-                <option value="http://fizmatdienas.lv/2017/" class="years-option">2017</option>
-                <option value="http://fizmatdienas.lv/2018/" class="years-option">2018</option>
-                <option value="http://fizmatdienas.lv/2019/" class="years-option">2019</option>
-                <option value="http://fizmatdienas.lv/2021/" selected="selected" class="years-option">2021</option>
-            </select>
-        </div>
-
-        <!--- header img/title--->
-        <div class="w-100 d-flex align-items-center header-title justify-content-center">
-            <div>
-                <h1 class="main-title">Virsraksts?</h1>
-                <a href="pasakumi.html">
-                    <img class="rounded mx-auto d-block logo" src="./img/pasākumi_img/main2021.png" alt="Fizmatdienas 2021 logo">
-                </a>
+                    <option value="http://fizmatdienas.lv/2006/" class="years-option">2006</option>
+                    <option value="http://fizmatdienas.lv/2008/" class="years-option">2008</option>
+                    <option value="http://fizmatdienas.lv/2009/" class="years-option">2009</option>
+                    <option value="http://fizmatdienas.lv/2010/" class="years-option">2010</option>
+                    <option value="http://fizmatdienas.lv/2011/" class="years-option">2011</option>
+                    <option value="http://fizmatdienas.lv/2012/" class="years-option">2012</option>
+                    <option value="http://fizmatdienas.lv/2013/" class="years-option">2013</option>
+                    <option value="http://fizmatdienas.lv/2014/" class="years-option">2014</option>
+                    <option value="http://fizmatdienas.lv/2015/" class="years-option">2015</option>
+                    <option value="http://fizmatdienas.lv/2016/" class="years-option">2016</option>
+                    <option value="http://fizmatdienas.lv/2017/" class="years-option">2017</option>
+                    <option value="http://fizmatdienas.lv/2018/" class="years-option">2018</option>
+                    <option value="http://fizmatdienas.lv/2019/" class="years-option">2019</option>
+                    <option value="http://fizmatdienas.lv/2021/" selected="selected" class="years-option">2021</option>
+                </select>
             </div>
-        </div>
 
-        <!---Neviens izņemot kremli neliek organizatorus augšā >:(--->
-        <!---<ul id="header_links">
+            <!--- header img/title--->
+
+
+            <div class="w-100 d-flex align-items-center justify-content-center">
+                <div>
+                    <h1 class="main-title">Virsraksts?</h1>
+                    <a href="index.html">
+                    </a>
+                </div>
+            </div>
+
+            <!---Neviens izņemot kremli neliek organizatorus augšā >:(--->
+            <!---<ul id="header_links">
             <li><a href="/2021/lapas/organizatori.html" title="Pasākuma organizatori">Organizatori</a></li>
         </ul>--->
-    </header>
+        </header>
 
-    <!--Navbar--->
-    <!----
+        <!--Navbar--->
+        <!----
     <ul id="header_calendar" style="width: 100%;">
 
         <li style="width: 18%;">
@@ -110,7 +112,7 @@
         </li>
     </ul>
      --->
-    <!----
+        <!----
     <div>
         <div style="text-align: center">
             <img id="pirmalapa" src="/img/pasākumi_img/FMD_211.jpg" alt="Fizmatdienas 2021 plakāts" height="80%" style="vertical-align:middle">
@@ -118,324 +120,326 @@
     </div>
     ---->
 
-    <!--- calendar roadmap - main content --->
+        <!--- calendar roadmap - main content --->
+        <div class="background-right">
 
-    <main class="main-content pt-5">
-
-        <div class="w-100 d-flex justify-content-start desc-container m-1">
-            <div class="desc  text-start p-3"> <b>Parasti šādās mājaslapās ir anotācija/ paskaidrojums ar to, kas tas vispār ir, bet ja nevajag tad principā pohuj</b> <br>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a pretium tortor. Donec est neque, consequat ac sodales id, tincidunt eget nulla. Vivamus at vehicula enim. Phasellus scelerisque risus eget augue gravida accumsan. Morbi laoreet euismod purus, et iaculis libero fringilla nec. Mauris arcu sapien, sagittis consectetur malesuada non, lobortis et urna. Phasellus lacinia vel tellus ut consectetur. Cras in lectus in sem convallis rhoncus. Sed eu arcu ac lectus congue tempor. Aenean porttitor at nulla eget pharetra. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis et quam nec nunc convallis pulvinar ac vitae urna. Etiam ac velit tortor. Donec a facilisis dolor.
-            </div>
         </div>
+        <main class="main-content pt-5">
+
+            <div class="w-100 d-flex justify-content-start desc-container m-1">
+                <div class="desc  text-start p-3"> <b>Parasti šādās mājaslapās ir anotācija/ paskaidrojums ar to, kas tas vispār ir, bet ja nevajag tad principā pohuj</b> <br>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a pretium tortor. Donec est neque, consequat ac sodales id, tincidunt eget nulla. Vivamus at vehicula enim. Phasellus scelerisque risus eget augue gravida accumsan. Morbi laoreet euismod purus, et iaculis libero fringilla nec. Mauris arcu sapien, sagittis consectetur malesuada non, lobortis et urna. Phasellus lacinia vel tellus ut consectetur. Cras in lectus in sem convallis rhoncus. Sed eu arcu ac lectus congue tempor. Aenean porttitor at nulla eget pharetra. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis et quam nec nunc convallis pulvinar ac vitae urna. Etiam ac velit tortor. Donec a facilisis dolor.
+                </div>
+            </div>
 
 
-        <!--calendar--->
-        <div class="w-100  d-flex justify-content-center">
-            <div class="w-50 mt-5 mb-5">
-                <div id="accordion">
+            <!--calendar--->
+            <div class="w-100  d-flex justify-content-center">
+                <div class="w-50 mt-5 mb-5">
+                    <div id="accordion">
 
-                    <ul class="calendar-list">
-                        <li>
-                            <div class="">
-                                <div class="card-header-style" id="headingOne">
-                                    <h5 class="mb-0 d-flex align-content-middle">
-                                        <button class="li-text" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                            Pasākuma nosaukums <span class="event-date">datums</span>
-                                        </button>
+                        <ul class="calendar-list">
+                            <li>
+                                <div class="">
+                                    <div class="card-header-style" id="headingOne">
+                                        <h5 class="mb-0 d-flex align-content-middle">
+                                            <button class="li-text" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                                Pasākuma nosaukums <span class="event-date">datums</span>
+                                            </button>
 
 
-                                    </h5>
-                                </div>
-
-                                <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion" style="border-left: 2px solid white;">
-                                    <div class="card-body d-flex justify-content-start">
-                                        <div class="col-4">
-                                            <img class="rounded mx-auto event-picture" src="./img/pasākumi_img/gajiens2021.png">
-                                        </div>
-                                        <div class="event-desc col">
-                                            <p>Pavasaris rit pilnā sparā un tā vien sauc izbaudīt dabu. Dienā, kad parasti tiktos ar oranžiem plakātiem Rīgas centrā, aicinām iziet 3.14 km garā pastaigā un tās laikā parādīt savu Fizmatiskumu (vai tas būtu izveidot kādā interesantā veidā uzrakstu "Fizmati", saukt saukļus vai vienkārši būt oranžiem). Ja vēlies pretendēt uz kādu balviņu, publicē pastaigu savā Facebook kontā, atzīmējot Fizmatdienu un FMOF SP lapas.
-
-                                            </p>
-                                        </div>
+                                        </h5>
                                     </div>
 
-                                </div>
-                            </div>
+                                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion" style="border-left: 2px solid white;">
+                                        <div class="card-body d-flex justify-content-start">
+                                            <div class="col-4">
+                                                <img class="rounded mx-auto event-picture" src="./img/pasākumi_img/gajiens2021.png">
+                                            </div>
+                                            <div class="event-desc col">
+                                                <p>Pavasaris rit pilnā sparā un tā vien sauc izbaudīt dabu. Dienā, kad parasti tiktos ar oranžiem plakātiem Rīgas centrā, aicinām iziet 3.14 km garā pastaigā un tās laikā parādīt savu Fizmatiskumu (vai tas būtu izveidot kādā interesantā veidā uzrakstu "Fizmati", saukt saukļus vai vienkārši būt oranžiem). Ja vēlies pretendēt uz kādu balviņu, publicē pastaigu savā Facebook kontā, atzīmējot Fizmatdienu un FMOF SP lapas.
 
-                        </li>
+                                                </p>
+                                            </div>
+                                        </div>
 
-                    </ul>
-
-                    <ul class="calendar-list">
-                        <li>
-                            <div class="">
-                                <div class="card-header-style" id="headingTwo">
-                                    <h5 class="mb-0 d-flex align-content-middle">
-                                        <button class="li-text" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                            Pasākuma nosaukums <span class="event-date">datums</span>
-                                        </button>
-
-
-                                    </h5>
+                                    </div>
                                 </div>
 
-                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion" style="border-left: 2px solid white;">
-                                    <div class="card-body d-flex justify-content-start">
-                                        <div class="col-4">
-                                            <img class="rounded mx-auto event-picture" src="./img/pasākumi_img/gajiens2021.png">
-                                        </div>
-                                        <div class="event-desc col">
-                                            <p>Pavasaris rit pilnā sparā un tā vien sauc izbaudīt dabu. Dienā, kad parasti tiktos ar oranžiem plakātiem Rīgas centrā, aicinām iziet 3.14 km garā pastaigā un tās laikā parādīt savu Fizmatiskumu (vai tas būtu izveidot kādā interesantā veidā uzrakstu "Fizmati", saukt saukļus vai vienkārši būt oranžiem). Ja vēlies pretendēt uz kādu balviņu, publicē pastaigu savā Facebook kontā, atzīmējot Fizmatdienu un FMOF SP lapas.
+                            </li>
 
-                                            </p>
-                                        </div>
+                        </ul>
+
+                        <ul class="calendar-list">
+                            <li>
+                                <div class="">
+                                    <div class="card-header-style" id="headingTwo">
+                                        <h5 class="mb-0 d-flex align-content-middle">
+                                            <button class="li-text" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                                Pasākuma nosaukums <span class="event-date">datums</span>
+                                            </button>
+
+
+                                        </h5>
                                     </div>
 
+                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion" style="border-left: 2px solid white;">
+                                        <div class="card-body d-flex justify-content-start">
+                                            <div class="col-4">
+                                                <img class="rounded mx-auto event-picture" src="./img/pasākumi_img/gajiens2021.png">
+                                            </div>
+                                            <div class="event-desc col">
+                                                <p>Pavasaris rit pilnā sparā un tā vien sauc izbaudīt dabu. Dienā, kad parasti tiktos ar oranžiem plakātiem Rīgas centrā, aicinām iziet 3.14 km garā pastaigā un tās laikā parādīt savu Fizmatiskumu (vai tas būtu izveidot kādā interesantā veidā uzrakstu "Fizmati", saukt saukļus vai vienkārši būt oranžiem). Ja vēlies pretendēt uz kādu balviņu, publicē pastaigu savā Facebook kontā, atzīmējot Fizmatdienu un FMOF SP lapas.
+
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+
+                            </li>
+
+                        </ul>
+
+
+
+
+                    </div>
+                </div>
+            </div>
+
+            <!--- organizers--->
+            <div class="organizers-background">
+
+                <h2 class="text-center organizers-title">Organizatori</h2>
+
+                <div class=" w-100 all-organizers">
+
+
+                    <div class="organizer-wrapper m-2">
+                        <div class="d-flex justify-content-center">
+                            <div style="width: 50%;">
+                                <div class="d-flex justify-content-center image-cropper">
+                                    <img class="organizer-img" src="https://i1.sndcdn.com/artworks-000441012093-sjcuz1-t500x500.jpg">
                                 </div>
                             </div>
 
-                        </li>
+                        </div>
 
-                    </ul>
+                        <h2 class="text-center organizator-name">Seši deviņi</h2>
+                        <p class="organizer-desc">I tell a nigga don't dick ride, don't blick ride
+                            Leave it to the double thick thighs, twin sisters
+                            Drop it down and wobble, wobble up, mami booted up
+                            She get down and gobble, gobble up 'cause my money up
+                            Slide, slide in the Bentley truck-a, the Wraith truck-a
+                            Your bestie is a dick sucker, I big dub her
+                            As-salama-lama alaykum, you big hater
+                            You nothin' but a hater, hater, clout chaser
+                        </p>
 
+
+                    </div>
+                    <div class="organizer-wrapper m-2">
+                        <div class="d-flex justify-content-center">
+                            <div style="width: 50%;">
+                                <div class="d-flex justify-content-center image-cropper">
+                                    <img class="organizer-img" src="https://i1.sndcdn.com/artworks-000441012093-sjcuz1-t500x500.jpg">
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <h2 class="text-center organizator-name">Seši deviņi</h2>
+                        <p class="organizer-desc">I tell a nigga don't dick ride, don't blick ride
+                            Leave it to the double thick thighs, twin sisters
+                            Drop it down and wobble, wobble up, mami booted up
+                            She get down and gobble, gobble up 'cause my money up
+                            Slide, slide in the Bentley truck-a, the Wraith truck-a
+                            Your bestie is a dick sucker, I big dub her
+                            As-salama-lama alaykum, you big hater
+                            You nothin' but a hater, hater, clout chaser
+                        </p>
+
+
+                    </div>
+                    <div class="organizer-wrapper m-2">
+                        <div class="d-flex justify-content-center">
+                            <div style="width: 50%;">
+                                <div class="d-flex justify-content-center image-cropper">
+                                    <img class="organizer-img" src="https://i1.sndcdn.com/artworks-000441012093-sjcuz1-t500x500.jpg">
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <h2 class="text-center organizator-name">Seši deviņi3</h2>
+                        <p class="organizer-desc">I tell a nigga don't dick ride, don't blick ride
+                            Leave it to the double thick thighs, twin sisters
+                            Drop it down and wobble, wobble up, mami booted up
+                            She get down and gobble, gobble up 'cause my money up
+                            Slide, slide in the Bentley truck-a, the Wraith truck-a
+                            Your bestie is a dick sucker, I big dub her
+                            As-salama-lama alaykum, you big hater
+                            You nothin' but a hater, hater, clout chaser
+                        </p>
+
+
+                    </div>
+                    <div class="organizer-wrapper m-2">
+                        <div class="d-flex justify-content-center">
+                            <div style="width: 50%;">
+                                <div class="d-flex justify-content-center image-cropper">
+                                    <img class="organizer-img" src="https://i1.sndcdn.com/artworks-000441012093-sjcuz1-t500x500.jpg">
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <h2 class="text-center organizator-name">Seši deviņi</h2>
+                        <p class="organizer-desc">I tell a nigga don't dick ride, don't blick ride
+                            Leave it to the double thick thighs, twin sisters
+                            Drop it down and wobble, wobble up, mami booted up
+                            She get down and gobble, gobble up 'cause my money up
+                            Slide, slide in the Bentley truck-a, the Wraith truck-a
+                            Your bestie is a dick sucker, I big dub her
+                            As-salama-lama alaykum, you big hater
+                            You nothin' but a hater, hater, clout chaser
+                        </p>
+
+
+                    </div>
+                    <div class="organizer-wrapper m-2">
+                        <div class="d-flex justify-content-center">
+                            <div style="width: 50%;">
+                                <div class="d-flex justify-content-center image-cropper">
+                                    <img class="organizer-img" src="https://i1.sndcdn.com/artworks-000441012093-sjcuz1-t500x500.jpg">
+                                </div>
+                            </div>
+
+                        </div>
+
+                        <h2 class="text-center organizator-name">Seši deviņi</h2>
+                        <p class="organizer-desc">I tell a nigga don't dick ride, don't blick ride
+                            Leave it to the double thick thighs, twin sisters
+                            Drop it down and wobble, wobble up, mami booted up
+                            She get down and gobble, gobble up 'cause my money up
+                            Slide, slide in the Bentley truck-a, the Wraith truck-a
+                            Your bestie is a dick sucker, I big dub her
+                            As-salama-lama alaykum, you big hater
+                            You nothin' but a hater, hater, clout chaser
+                        </p>
+
+
+                    </div>
+
+                </div>
+            </div>
+
+
+
+        </main>
+
+        <footer w-100>
+            <div class="w-100">
+                <h3 class="m-0 p-2 text-center" style="color: white;">Atbalstītāji</h3>
+
+                <div class="sponsors">
+                    <div class="sponsor-wrapper">
+                        <a class="" href="https://www.accenture.com/lv-en" title="Accenture" target="_blank">
+                            <img class="sponsor-img" src="./img/sponsors/Acc_Logo_Black_Purple_RGB.png">
+                        </a>
+                    </div>
+                    <div class="sponsor-wrapper">
+                        <a class="" href="https://www.accenture.com/lv-en" title="Accenture" target="_blank">
+                            <img class="sponsor-img" src="./img/sponsors/caffeine.png">
+                        </a>
+                    </div>
+                    <div class="sponsor-wrapper">
+                        <a class="" href="https://www.accenture.com/lv-en" title="Accenture" target="_blank">
+                            <img class="sponsor-img" src="./img/sponsors/fika.png">
+                        </a>
+                    </div>
+                    <div class="sponsor-wrapper">
+                        <a class="" href="https://www.accenture.com/lv-en" title="Accenture" target="_blank">
+                            <img class="sponsor-img" src="./img/sponsors/git.png">
+                        </a>
+                    </div>
+                    <div class="sponsor-wrapper">
+                        <a class="" href="https://www.accenture.com/lv-en" title="Accenture" target="_blank">
+                            <img class="sponsor-img" src="./img/sponsors/GROGLASS_LOGO_2017-CMYK.jpg">
+                        </a>
+                    </div>
+                    <div class="sponsor-wrapper">
+                        <a class="" href="https://www.accenture.com/lv-en" title="Accenture" target="_blank">
+                            <img class="sponsor-img" src="./img/sponsors/ilustretazinatne.png">
+                        </a>
+                    </div>
+                    <div class="sponsor-wrapper">
+                        <a class="" href="https://www.accenture.com/lv-en" title="Accenture" target="_blank">
+                            <img class="sponsor-img" src="./img/sponsors/lulu_logo_krasains.png">
+                        </a>
+                    </div>
+                    <div class="sponsor-wrapper">
+                        <a class="" href="https://www.accenture.com/lv-en" title="Accenture" target="_blank">
+                            <img class="sponsor-img" src="./img/sponsors/merrilid.png">
+                        </a>
+                    </div>
+                    <div class="sponsor-wrapper">
+                        <a class="" href="https://www.accenture.com/lv-en" title="Accenture" target="_blank">
+                            <img class="sponsor-img" src="./img/sponsors/redbul.png">
+                        </a>
+                    </div>
+                    <div class="sponsor-wrapper">
+                        <a class="" href="https://www.accenture.com/lv-en" title="Accenture" target="_blank">
+                            <img class="sponsor-img" src="./img/sponsors/river.png">
+                        </a>
+                    </div>
+                    <div class="sponsor-wrapper">
+                        <a class="" href="https://www.accenture.com/lv-en" title="Accenture" target="_blank">
+                            <img class="sponsor-img" src="./img/sponsors/RMM_logo_vertical-01.png">
+                        </a>
+                    </div>
+                    <div class="sponsor-wrapper">
+                        <a class="" href="https://www.accenture.com/lv-en" title="Accenture" target="_blank">
+                            <img class="sponsor-img" src="./img/sponsors/skriveru2.jpg">
+                        </a>
+                    </div>
+                    <div class="sponsor-wrapper">
+                        <a class="" href="https://www.accenture.com/lv-en" title="Accenture" target="_blank">
+                            <img class="sponsor-img" src="./img/sponsors/treeven.png">
+                        </a>
+                    </div>
+                    <div class="sponsor-wrapper">
+                        <a class="" href="https://www.accenture.com/lv-en" title="Accenture" target="_blank">
+                            <img class="sponsor-img" src="./img/sponsors//U%C5%BEavas_allus.png">
+                        </a>
+                    </div>
 
 
 
                 </div>
             </div>
-        </div>
 
-        <!--- organizers--->
+            <div class="wtf-block">
+                <a href="http://www.fizmati.lv" target="_blank" title="Fizmati.lv">
+                    <img src="./img/logo/flv.png" alt="Fizmati.lv">
+                    <span>Iespējams, oranžākais portāls Latvijā</span>
+                </a>
 
-        <div>
-
-            <h2 class="text-center organizers-title">Organizatori</h2>
-            <div class=" w-100 all-organizers">
-
-
-                <div class="organizer-wrapper m-2">
-                    <div class="d-flex justify-content-center">
-                        <div style="width: 50%;">
-                            <div class="d-flex justify-content-center image-cropper">
-                                <img class="organizer-img" src="https://i1.sndcdn.com/artworks-000441012093-sjcuz1-t500x500.jpg">
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <h2 class="text-center organizator-name">Seši deviņi</h2>
-                    <p class="organizer-desc">I tell a nigga don't dick ride, don't blick ride
-                        Leave it to the double thick thighs, twin sisters
-                        Drop it down and wobble, wobble up, mami booted up
-                        She get down and gobble, gobble up 'cause my money up
-                        Slide, slide in the Bentley truck-a, the Wraith truck-a
-                        Your bestie is a dick sucker, I big dub her
-                        As-salama-lama alaykum, you big hater
-                        You nothin' but a hater, hater, clout chaser
-                    </p>
-
-
-                </div>
-                <div class="organizer-wrapper m-2">
-                    <div class="d-flex justify-content-center">
-                        <div style="width: 50%;">
-                            <div class="d-flex justify-content-center image-cropper">
-                                <img class="organizer-img" src="https://i1.sndcdn.com/artworks-000441012093-sjcuz1-t500x500.jpg">
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <h2 class="text-center organizator-name">Seši deviņi</h2>
-                    <p class="organizer-desc">I tell a nigga don't dick ride, don't blick ride
-                        Leave it to the double thick thighs, twin sisters
-                        Drop it down and wobble, wobble up, mami booted up
-                        She get down and gobble, gobble up 'cause my money up
-                        Slide, slide in the Bentley truck-a, the Wraith truck-a
-                        Your bestie is a dick sucker, I big dub her
-                        As-salama-lama alaykum, you big hater
-                        You nothin' but a hater, hater, clout chaser
-                    </p>
-
-
-                </div>
-                <div class="organizer-wrapper m-2">
-                    <div class="d-flex justify-content-center">
-                        <div style="width: 50%;">
-                            <div class="d-flex justify-content-center image-cropper">
-                                <img class="organizer-img" src="https://i1.sndcdn.com/artworks-000441012093-sjcuz1-t500x500.jpg">
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <h2 class="text-center organizator-name">Seši deviņi</h2>
-                    <p class="organizer-desc">I tell a nigga don't dick ride, don't blick ride
-                        Leave it to the double thick thighs, twin sisters
-                        Drop it down and wobble, wobble up, mami booted up
-                        She get down and gobble, gobble up 'cause my money up
-                        Slide, slide in the Bentley truck-a, the Wraith truck-a
-                        Your bestie is a dick sucker, I big dub her
-                        As-salama-lama alaykum, you big hater
-                        You nothin' but a hater, hater, clout chaser
-                    </p>
-
-
-                </div>
-                <div class="organizer-wrapper m-2">
-                    <div class="d-flex justify-content-center">
-                        <div style="width: 50%;">
-                            <div class="d-flex justify-content-center image-cropper">
-                                <img class="organizer-img" src="https://i1.sndcdn.com/artworks-000441012093-sjcuz1-t500x500.jpg">
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <h2 class="text-center organizator-name">Seši deviņi</h2>
-                    <p class="organizer-desc">I tell a nigga don't dick ride, don't blick ride
-                        Leave it to the double thick thighs, twin sisters
-                        Drop it down and wobble, wobble up, mami booted up
-                        She get down and gobble, gobble up 'cause my money up
-                        Slide, slide in the Bentley truck-a, the Wraith truck-a
-                        Your bestie is a dick sucker, I big dub her
-                        As-salama-lama alaykum, you big hater
-                        You nothin' but a hater, hater, clout chaser
-                    </p>
-
-
-                </div>
-                <div class="organizer-wrapper m-2">
-                    <div class="d-flex justify-content-center">
-                        <div style="width: 50%;">
-                            <div class="d-flex justify-content-center image-cropper">
-                                <img class="organizer-img" src="https://i1.sndcdn.com/artworks-000441012093-sjcuz1-t500x500.jpg">
-                            </div>
-                        </div>
-
-                    </div>
-
-                    <h2 class="text-center organizator-name">Seši deviņi</h2>
-                    <p class="organizer-desc">I tell a nigga don't dick ride, don't blick ride
-                        Leave it to the double thick thighs, twin sisters
-                        Drop it down and wobble, wobble up, mami booted up
-                        She get down and gobble, gobble up 'cause my money up
-                        Slide, slide in the Bentley truck-a, the Wraith truck-a
-                        Your bestie is a dick sucker, I big dub her
-                        As-salama-lama alaykum, you big hater
-                        You nothin' but a hater, hater, clout chaser
-                    </p>
-
-
-                </div>
-
+                <a href="http://possible.lv/">
+                    <img src="./img/logo/03.png" alt="Possible Security">
+                    <span>Palīdzējām datu apstrādē</span>
+                </a>
             </div>
-        </div>
-
-
-
-    </main>
-
-    <footer w-100>
-        <div class="w-100">
-            <h3 class="m-0 p-2 text-center" style="color: white;">Atbalstītāji</h3>
-
-            <div class="sponsors">
-                <div class="sponsor-wrapper">
-                    <a class="" href="https://www.accenture.com/lv-en" title="Accenture" target="_blank">
-                        <img class="sponsor-img" src="./img/sponsors/Acc_Logo_Black_Purple_RGB.png">
-                    </a>
-                </div>
-                <div class="sponsor-wrapper">
-                    <a class="" href="https://www.accenture.com/lv-en" title="Accenture" target="_blank">
-                        <img class="sponsor-img" src="./img/sponsors/caffeine.png">
-                    </a>
-                </div>
-                <div class="sponsor-wrapper">
-                    <a class="" href="https://www.accenture.com/lv-en" title="Accenture" target="_blank">
-                        <img class="sponsor-img" src="./img/sponsors/fika.png">
-                    </a>
-                </div>
-                <div class="sponsor-wrapper">
-                    <a class="" href="https://www.accenture.com/lv-en" title="Accenture" target="_blank">
-                        <img class="sponsor-img" src="./img/sponsors/git.png">
-                    </a>
-                </div>
-                <div class="sponsor-wrapper">
-                    <a class="" href="https://www.accenture.com/lv-en" title="Accenture" target="_blank">
-                        <img class="sponsor-img" src="./img/sponsors/GROGLASS_LOGO_2017-CMYK.jpg">
-                    </a>
-                </div>
-                <div class="sponsor-wrapper">
-                    <a class="" href="https://www.accenture.com/lv-en" title="Accenture" target="_blank">
-                        <img class="sponsor-img" src="./img/sponsors/ilustretazinatne.png">
-                    </a>
-                </div>
-                <div class="sponsor-wrapper">
-                    <a class="" href="https://www.accenture.com/lv-en" title="Accenture" target="_blank">
-                        <img class="sponsor-img" src="./img/sponsors/lulu_logo_krasains.png">
-                    </a>
-                </div>
-                <div class="sponsor-wrapper">
-                    <a class="" href="https://www.accenture.com/lv-en" title="Accenture" target="_blank">
-                        <img class="sponsor-img" src="./img/sponsors/merrilid.png">
-                    </a>
-                </div>
-                <div class="sponsor-wrapper">
-                    <a class="" href="https://www.accenture.com/lv-en" title="Accenture" target="_blank">
-                        <img class="sponsor-img" src="./img/sponsors/redbul.png">
-                    </a>
-                </div>
-                <div class="sponsor-wrapper">
-                    <a class="" href="https://www.accenture.com/lv-en" title="Accenture" target="_blank">
-                        <img class="sponsor-img" src="./img/sponsors/river.png">
-                    </a>
-                </div>
-                <div class="sponsor-wrapper">
-                    <a class="" href="https://www.accenture.com/lv-en" title="Accenture" target="_blank">
-                        <img class="sponsor-img" src="./img/sponsors/RMM_logo_vertical-01.png">
-                    </a>
-                </div>
-                <div class="sponsor-wrapper">
-                    <a class="" href="https://www.accenture.com/lv-en" title="Accenture" target="_blank">
-                        <img class="sponsor-img" src="./img/sponsors/skriveru2.jpg">
-                    </a>
-                </div>
-                <div class="sponsor-wrapper">
-                    <a class="" href="https://www.accenture.com/lv-en" title="Accenture" target="_blank">
-                        <img class="sponsor-img" src="./img/sponsors/treeven.png">
-                    </a>
-                </div>
-                <div class="sponsor-wrapper">
-                    <a class="" href="https://www.accenture.com/lv-en" title="Accenture" target="_blank">
-                        <img class="sponsor-img" src="./img/sponsors//U%C5%BEavas_allus.png">
-                    </a>
-                </div>
-
-
-
-            </div>
-        </div>
-
-        <div class="wtf-block">
-            <a href="http://www.fizmati.lv" target="_blank" title="Fizmati.lv">
-                <img src="./img/logo/flv.png" alt="Fizmati.lv">
-                <span>Iespējams, oranžākais portāls Latvijā</span>
-            </a>
-
-            <a href="http://possible.lv/">
-                <img src="./img/logo/03.png" alt="Possible Security">
-                <span>Palīdzējām datu apstrādē</span>
-            </a>
-        </div>
-    </footer>
+        </footer>
 
 
 
 
 
 
-
+    </div>
 </body>
 
 </html>
