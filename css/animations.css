@@ -1,0 +1,94 @@
+body {
+    background: repeating-linear-gradient(45deg, #f08426, #ffd23d, #ff8a14, #ff7a14);
+    background-size: 400% 400%;
+    animation: gradient 20s ease infinite;
+
+    -webkit-box-shadow: inset 0px 10px 82px 27px rgba(0, 0, 0, 0.54);
+    -moz-box-shadow: inset 0px 10px 82px 27px rgba(0, 0, 0, 0.54);
+    box-shadow: inset 0px 10px 82px 27px rgba(0, 0, 0, 0.54);
+    ;
+}
+
+
+
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 0% 50%;
+    }
+}
+
+.logo,
+.main-title {
+    -webkit-animation: fadein 2s;
+
+}
+
+@keyframes fadein {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.desc {
+    animation: fadeInLeft 1s;
+}
+
+@keyframes fadeInLeft {
+    0% {
+        opacity: 0;
+        transform: translateX(-30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.card-header-style {
+    animation: fadeInLeftFar 1s;
+}
+
+.li-text:hover {
+    font-size: 50px;
+    text-shadow: 3px 3px 11px rgba(150, 150, 150, 0.72);
+    transition-timing-function: linear;
+    transition: all 1s ease;
+}
+
+.organizer-wrapper:hover {
+    background-color: rgba(150, 150, 150, 0.3);
+    transition: all 1s ease;
+
+}
+
+@keyframes fadeInLeftFar {
+    0% {
+        opacity: 0.3;
+        transform: translateX(-400px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.sponsor-wrapper:hover {
+
+    background-color: rgba(150, 150, 150, 0.3);
+    transition: all 1s ease;
+}

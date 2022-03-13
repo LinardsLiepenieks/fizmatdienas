@@ -1,0 +1,2467 @@
+/*
+ * Theme Name: Fizmatdienas 18
+ * Theme URI: http://fizmatdienas.lv
+ * Description: Tema 2018. gada fizmatdienu majas lapai
+ * Author: World Technology Frontier + Valta Liepiņa modifikācijas
+ * Author URI: http://www.wtf.lv/
+ * Version: 1
+ */
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font: inherit;
+    font-size: 100%;
+    vertical-align: baseline;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 2.5rem;
+    font-weight: 500;
+}
+
+html {
+    line-height: 1;
+    background-color: #555;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    margin: 0 auto 1rem;
+}
+
+caption,
+th,
+td {
+    text-align: left;
+    font-weight: normal;
+    vertical-align: middle;
+    padding: 0.5rem;
+    border-left: 1px solid #fff;
+}
+
+td.label {
+    font-weight: bold;
+}
+
+th {
+    font-weight: bold;
+}
+
+tr.header-row {
+    border-bottom: 1px solid #fff;
+}
+
+caption:first-child,
+th:first-child,
+td:first-child {
+    border-left: none;
+}
+
+q,
+blockquote {
+    quotes: none;
+}
+
+q:before,
+q:after,
+blockquote:before,
+blockquote:after {
+    content: "";
+    content: none;
+}
+
+a img {
+    border: none;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary {
+    display: block;
+}
+
+@font-face {
+    font-family: 'Lemondrop';
+    src: url("2017/fonts/lemondrop.eot");
+    src: url("2017/fonts/lemondrop.eot?#iefix") format("embedded-opentype"), url("2017/fonts/lemondrop.svg#lemondrop") format("svg"), url("2017/fonts/lemondrop.woff") format("woff"), url("2017/fonts/lemondrop.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+body {
+    font-family: 'Ubuntu', sans-serif;
+    color: #fff;
+    background-color: #333;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+b {
+    font-weight: bold;
+}
+
+/*
+   Wrappera CSS
+ */
+#wrapper {
+    margin: 0 auto;
+    max-width: 64em;
+    overflow: hidden;
+}
+
+#wrapper:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.lt-ie9 #wrapper {
+    *zoom: 1;
+    max-width: 77.5em;
+    _width: 77.5em;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 1024px;
+}
+
+.lt-ie9 #wrapper:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.page {
+    padding: 0 0.5rem 2rem;
+    text-align: center;
+}
+
+.page p {
+    margin-bottom: 1rem;
+    line-height: 1.4rem;
+}
+
+.page p a {
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.page img {
+    margin-bottom: 2rem;
+    height: 200px;
+    max-width: 100%;
+}
+
+@media (min-width: 60em) {
+    .page img {
+        height: 400px;
+    }
+}
+
+/*
+   Gadu CSS
+ */
+.years {
+    position: relative;
+    padding-top: 0.5em;
+    padding-bottom: .5em;
+    text-align: center;
+}
+
+.years ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    overflow: hidden;
+    *zoom: 1;
+    display: inline-block;
+}
+
+.years ul li {
+    list-style-image: none;
+    list-style-type: none;
+    margin-left: 0;
+    display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    zoom: 1;
+    *display: inline;
+    white-space: nowrap;
+    padding-left: 0.25em;
+    padding-right: 0.25em;
+    font-size: 1.125em;
+}
+
+.years ul li a {
+    color: #fff;
+}
+
+.years a.org {
+    position: absolute;
+    right: 0;
+    top: .45em;
+    font-size: 1.125em;
+}
+
+@media (max-width: 660px) {
+    .years ul {
+        display: none;
+    }
+}
+
+/* @media (min-width: 30em) {
+   .years ul {
+   display: none;
+   }
+   }@media (min-width: 40em) {
+   .years {
+   margin-bottom: 0.5em;
+   }
+   .years ul {
+   display: block;
+   }
+   }@media (min-width: 60em) {
+   .years ul {
+   display: block;
+   }
+   } */
+.lt-ie9 .years ul {
+    display: block;
+}
+
+/*
+   Sakas header CSS
+ */
+header {
+    *zoom: 1;
+}
+
+header:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+header h1 {
+    font-size: 4rem;
+    line-height: 0.985em;
+    font-weight: bold;
+    margin-bottom: 0.5em;
+    text-align: center;
+}
+
+header h1 .divider {
+    font-weight: 300;
+}
+
+header h1 .divider-small {
+    font-weight: 300;
+    font-size: 0.538em;
+}
+
+header h1 a {
+    font-size: 0.538em;
+    font-weight: 300;
+}
+
+header .description {
+    text-align: center;
+    *zoom: 1;
+    margin-bottom: .5em;
+}
+
+header .description:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+header img {
+    display: block;
+    width: auto;
+    height: 400px;
+    margin: 0 auto 2rem;
+}
+
+.notice {
+    margin-bottom: 2rem;
+}
+
+@media (min-width: 5em) {
+    header h1 {
+        font-size: 2rem;
+    }
+
+    header .description p {
+        font-size: 0.8750em;
+        line-height: 1.7143em;
+    }
+}
+
+@media (min-width: 40em) {
+    header h1 {
+        font-size: 4rem;
+        line-height: 0.985em;
+    }
+
+    header .description p {
+        font-size: 1.125em;
+        line-height: 1.778em;
+    }
+}
+
+@media (min-width: 60em) {
+    header .description {
+        width: 100%;
+        float: right;
+        margin-right: 0;
+    }
+}
+
+.lt-ie9 header .description {
+    width: 100%;
+    float: right;
+    margin-right: 0;
+    *margin-left: -0.5em;
+    display: inline;
+}
+
+#wrapper.page124,
+#wrapper.page122,
+#wrapper.page126,
+#wrapper.page129 {
+    background-image: url("http://fizmatdienas.lv/img/2013/FMD_simbols.png");
+    background-repeat: no-repeat;
+    background-position: 0 36px;
+}
+
+#wrapper.page78 {
+    background-image: url("http://fizmatdienas.lv/img/2013/FMD_LB_simbols.png");
+    background-repeat: no-repeat;
+    background-position: 0 60px;
+}
+
+/* Logo CSS */
+#wrapper {
+    position: relative;
+}
+
+#header {
+    margin: 0 auto 2rem;
+    background-color: #A84D3A;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+#header_links {
+    margin: 0 auto;
+}
+
+#header_links li {
+    padding: 1rem 0.4rem;
+    font-size: 1.4em;
+}
+
+#logo_container a {
+    display: block;
+}
+
+#logo_container h1 {
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+#logo_container div {
+    font-size: 16px;
+}
+
+#logo,
+#logo-lb {
+    width: 550px;
+    height: auto;
+    max-width: 100%;
+}
+
+#header_links {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+@media (min-width: 45rem) {
+    #header_links li {
+        display: inline-block;
+    }
+}
+
+#header_calendar {
+    padding: 1rem 0;
+    width: 50rem;
+    background-color: #555;
+    box-shadow: inset black 0 0 10px -2px;
+}
+
+#header_calendar li {
+    margin: 0;
+    font-size: 1em;
+    width: 50rem;
+    vertical-align: top;
+    margin-bottom: 1rem;
+    line-height: 1.5em;
+}
+
+#header_calendar a {
+    color: #eee;
+}
+
+#header_calendar p {
+    margin-bottom: 0.3em;
+    width: 10px;
+}
+
+#header_calendar .date {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+@media (min-width: 45rem) {
+    #header_calendar .date {
+        margin-bottom: 1rem;
+    }
+
+    #header_calendar li {
+        margin-bottom: 0;
+        display: inline-block;
+        height: 8rem;
+        width: 50rem;
+        border-right: 1px solid #eee;
+    }
+
+    #header_calendar li:last-child {
+        border-right: none;
+    }
+}
+
+.description a {
+    text-decoration: underline;
+}
+
+/*
+   Anketas CSS
+ */
+
+.payment-details {
+    margin: 0 auto 1rem;
+}
+
+.payment-details td {
+    border-left: none;
+    padding: 0.2rem 0.5rem;
+}
+
+.payment-details td:first-child {
+    padding-left: 0;
+}
+
+.form {
+    display: block;
+    max-width: 35rem;
+    margin: 0 auto;
+}
+
+input,
+select {
+    padding: 0.2rem;
+    color: #000;
+    background-color: #fff;
+    border: solid #555 1px;
+    width: 200px;
+}
+
+#spmstp {
+    display: none;
+}
+
+.form br,
+.form select,
+#spmstp {
+    margin-bottom: 1rem;
+}
+
+.form label {
+    display: block;
+}
+
+.form .status {
+    margin-bottom: 1rem;
+    font-weight: 500;
+}
+
+.form .status.failure {
+    color: red;
+}
+
+.form .status.success {
+    color: #6cfb6c;
+}
+
+.list li {
+    list-style: initial;
+    margin-bottom: 0.5rem;
+}
+
+.list {
+    margin-bottom: 1rem;
+}
+
+.button {
+    display: inline-block;
+    padding: 0.8rem 3rem;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    background-color: #A84D3A;
+    transition: background-color 0.1s;
+}
+
+.button:hover {
+    background-color: #B43F26;
+}
+
+.button:active {
+    background-color: #923F2E;
+}
+
+@media (min-width: 60em) {
+    .payment-details {
+        margin: 0 0 1rem;
+    }
+
+    .form div {
+        text-align: left;
+    }
+
+    .form label {
+        display: inline-block;
+        float: left;
+    }
+
+    .form input,
+    select {
+        float: right;
+    }
+
+    .form input[type=submit] {
+        float: none;
+    }
+
+    .form br,
+    #spmstp:after {
+        display: block;
+        clear: both;
+    }
+
+    #spmstp:after {
+        content: "";
+    }
+
+    .form br,
+    .form select {
+        margin-bottom: 1rem;
+    }
+}
+
+/*
+   Sakas registracijas CSS
+ */
+.registration {
+    min-height: 26em;
+}
+
+.registration select,
+.registration textarea,
+.registration input[type="text"],
+.registration input[type="password"],
+.registration input[type="datetime"],
+.registration input[type="datetime-local"],
+.registration input[type="date"],
+.registration input[type="month"],
+.registration input[type="time"],
+.registration input[type="week"],
+.registration input[type="number"],
+.registration input[type="email"],
+.registration input[type="url"],
+.registration input[type="search"],
+.registration input[type="tel"],
+.registration input[type="color"],
+.registration .uneditable-input {
+    display: inline-block;
+    height: 2em;
+    font-size: 1em;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
+    border-radius: 0.2em;
+    background-color: white;
+    border: 1px solid #ccc;
+}
+
+.registration select:focus,
+.registration textarea:focus,
+.registration input[type="text"]:focus,
+.registration input[type="password"]:focus,
+.registration input[type="datetime"]:focus,
+.registration input[type="datetime-local"]:focus,
+.registration input[type="date"]:focus,
+.registration input[type="month"]:focus,
+.registration input[type="time"]:focus,
+.registration input[type="week"]:focus,
+.registration input[type="number"]:focus,
+.registration input[type="email"]:focus,
+.registration input[type="url"]:focus,
+.registration input[type="search"]:focus,
+.registration input[type="tel"]:focus,
+.registration input[type="color"]:focus,
+.registration .uneditable-input:focus {
+    border-color: #ffb200;
+    outline: 0;
+    -webkit-box-shadow: #ffb200 0px 5px #333;
+    -moz-box-shadow: #ffb200 0px 5px #333;
+    box-shadow: #ffb200 0px 5px #333;
+}
+
+.registration .alert-block {
+    display: none;
+    background-color: #F2DEDE;
+    padding: 1em;
+    margin: -1em 0 1em;
+    text-align: center;
+    border-radius: 0.25em;
+}
+
+.registration .alert-block strong {
+    font-weight: 700;
+}
+
+.registration p.help-block {
+    color: #999;
+}
+
+.registration p.help-block strong {
+    font-weight: 700;
+}
+
+.registration h3 {
+    text-align: center;
+}
+
+.registration h3 + p.help-block {
+    text-align: center;
+}
+
+.registration section {
+    *zoom: 1;
+}
+
+.registration section:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.registration section .control-group {
+    *zoom: 1;
+    min-height: 3em;
+    margin-bottom: 0.5em;
+}
+
+.registration section .control-group:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.registration section .controls p strong {
+    font-weight: 400;
+}
+
+.registration section label {
+    display: inline-block;
+    font-weight: 300;
+}
+
+.registration section label.radio {
+    background-color: #f5f5f5;
+    padding: 0.5em;
+}
+
+.registration section#solis-1 {
+    text-align: center;
+}
+
+.registration section a.btn-large {
+    border-radius: 2em;
+}
+
+.registration section a.btn-large span {
+    font-size: 1.2500em;
+    line-height: 2em;
+    display: block;
+    float: left;
+}
+
+.registration section a.btn-large i {
+    font-size: 2em;
+    line-height: 1.35em;
+    display: block;
+    float: right;
+    margin-left: 0.5em;
+}
+
+.registration section a.draugiemlv {
+    border-color: #ffb200;
+}
+
+.registration section a.draugiemlv i {
+    color: #ffb200;
+}
+
+.registration section a.facebook {
+    border-color: #3b5998;
+}
+
+.registration section a.facebook i {
+    color: #3b5998;
+}
+
+@media (min-width: 5em) {
+    .registration input[type="text"] {
+        width: 100%
+    }
+
+    .registration section label.loma + label.loma {
+        margin-top: .5em;
+    }
+
+    .registration section label.inline {
+        display: block;
+        clear: both;
+        -webkit-border-radius: 0.25em;
+        -moz-border-radius: 0.25em;
+        border-radius: 0.25em;
+    }
+
+    .registration h3 {
+        font-size: 1.2500em;
+        line-height: 1.2000em;
+        margin-bottom: 0.4000em;
+        margin-top: 0.8000em;
+    }
+
+    .registration h3 + p.help-block {
+        margin-top: -.5em;
+        margin-bottom: 1.5em;
+    }
+
+    .registration .informacija select {
+        width: 100%
+    }
+
+    .registration .informacija .limenis {
+        margin-top: .5em;
+    }
+
+    .registration .controls p {
+        line-height: 1.5em;
+    }
+
+    .registration .controls #submit {
+        margin: auto;
+        display: block;
+    }
+}
+
+@media (min-width: 40em) {
+    .registration section label.inline {
+        display: inline-block;
+        clear: inherit;
+    }
+
+    .registration h3 {
+        font-size: 1.5em;
+        margin-bottom: 1em;
+        margin-top: 2em;
+    }
+
+    .registration h3 + p.help-block {
+        margin-top: -1em;
+        margin-bottom: 1.5em;
+    }
+
+    .registration label {
+        font-size: 1.25em;
+        line-height: 1.2em;
+    }
+
+    .registration .controls p {
+        line-height: 1.5em;
+    }
+
+    .registration .controls #submit {
+        margin: auto;
+        display: inline-block;
+        margin-top: 1em;
+    }
+}
+
+@media (min-width: 60em) {
+    .registration label.control-label {
+        width: 32.90323%;
+        float: left;
+        margin-right: 0.64516%;
+        text-align: right;
+        margin-top: 0.5em;
+    }
+
+    .registration .controls {
+        width: 66.45161%;
+        float: right;
+        margin-right: 0;
+    }
+
+    .registration .controls input[type="text"],
+    .registration .controls select {
+        width: 19em;
+        padding-left: 0.5em;
+        margin-left: 1em;
+    }
+
+    .registration .controls .help-block {
+        margin-left: 1em;
+    }
+
+    .registration .controls label.checkbox {
+        margin-left: 1em;
+    }
+
+    .registration .controls label.input.inline {
+        margin-left: 1em;
+    }
+
+    .registration .controls label.input.inline input[type="text"] {
+        margin-left: 0;
+        width: 4em;
+    }
+
+    .registration .controls > p:first-child {
+        margin-top: 0.5em;
+    }
+
+    .registration .controls p {
+        font-size: 1.25em;
+        font-weight: 300;
+        line-height: 1.2em;
+        margin-left: 1em;
+    }
+
+    .registration .controls .btn-main {
+        margin-top: 1em;
+    }
+
+    .registration label.radio.inline {
+        margin-left: 0.75em;
+    }
+
+    .registration label.radio.inline + label.radio.inline {
+        margin-left: 0.25em;
+    }
+
+    .registration label.loma {
+        width: 30%
+    }
+
+    .registration section.pieteikties {
+        text-align: center;
+    }
+}
+
+.lt-ie9 .registration label.control-label {
+    width: 32.90323%;
+    float: left;
+    margin-right: 0.64516%;
+    display: inline;
+    text-align: right;
+    margin-top: 0.5em;
+}
+
+.lt-ie9 .registration .controls {
+    width: 66.45161%;
+    float: right;
+    margin-right: 0;
+    *margin-left: -0.5em;
+    display: inline;
+}
+
+.lt-ie9 .registration .controls input[type="text"],
+.lt-ie9 .registration .controls select {
+    width: 19em;
+    padding-left: 0.5em;
+    margin-left: 1em;
+}
+
+.lt-ie9 .registration .controls .help-block {
+    margin-left: 1em;
+}
+
+.lt-ie9 .registration .controls label.checkbox {
+    margin-left: 1em;
+}
+
+.lt-ie9 .registration .controls label.input.inline {
+    margin-left: 1em;
+}
+
+.lt-ie9 .registration .controls label.input.inline input[type="text"] {
+    margin-left: 0;
+    width: 4em;
+}
+
+.lt-ie9 .registration .controls > p:first-child {
+    margin-top: 0.5em;
+}
+
+.lt-ie9 .registration .controls p {
+    font-size: 1.25em;
+    font-weight: 300;
+    line-height: 1.2em;
+    margin-left: 1em;
+}
+
+.lt-ie9 .registration .controls .btn-main {
+    margin-top: 1em;
+}
+
+.lt-ie9 .registration label.radio.inline {
+    margin-left: 0.75em;
+}
+
+.lt-ie9 .registration label.radio.inline + label.radio.inline {
+    margin-left: 0.25em;
+}
+
+.lt-ie9 .registration label.loma {
+    width: 30%
+}
+
+.lt-ie9 .registration section.pieteikties {
+    text-align: center;
+}
+
+/*
+   Sakas pogu CSS
+ */
+.btn {
+    display: inline-block;
+    background-color: none;
+    padding: 0.45em 1em;
+    border: 1px solid #FAB256;
+    border-radius: 1em;
+}
+
+.btn-main {
+    background-color: #ee3d00;
+    color: white;
+    border-radius: .125em;
+    border: none;
+    font-size: 1.5em;
+    font-weight: 300;
+    padding: 0.5em 2em;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.btn-main:hover {
+    text-decoration: none;
+    background-color: #95b64d;
+}
+
+/*
+   Sakas alumni CSS
+ */
+.attendees nav {
+    margin: 2em 0;
+    text-align: center;
+}
+
+.attendees nav ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    overflow: hidden;
+    *zoom: 1;
+    display: inline-block;
+}
+
+.attendees nav ul li {
+    list-style-image: none;
+    list-style-type: none;
+    margin-left: 0;
+    display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    zoom: 1;
+    *display: inline;
+    white-space: nowrap;
+    padding-left: 1em;
+    padding-right: 1em;
+    font-size: 1.250em;
+    line-height: 1.200em;
+    font-weight: 300;
+    padding: 0.4em 0.75em;
+    border-radius: 1em;
+}
+
+.attendees nav ul li + li {
+    margin-left: 0.5em;
+}
+
+.attendees nav ul li.active {
+    background-color: #5a9a70;
+}
+
+.attendees nav ul li.active a {
+    color: white;
+}
+
+.attendees nav ul li.active a:hover {
+    text-decoration: none;
+}
+
+.attendees .alumni {
+    margin-bottom: 1em;
+}
+
+.attendees .alumni .crop {
+    overflow: hidden;
+    border-radius: 5em;
+}
+
+.attendees .alumni .crop img {
+    width: 100%
+}
+
+.attendees .alumni .alumni-body p.alumniOf {
+    color: #999;
+    display: inline-block;
+}
+
+.attendees .alumni .alumni-body p.alumniOf span.programme {
+    white-space: nowrap;
+    overflow: hidden;
+    -ms-text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    text-overflow: ellipsis;
+    display: inline-block;
+    width: 7em;
+    line-height: 0.75em;
+    padding-bottom: 0.1em;
+}
+
+.attendees .attendees-list h2 {
+    clear: both;
+    text-align: center;
+}
+
+.attendees .attendees-list .yearBottomLine {
+    float: left;
+    width: 100%
+}
+
+@media (min-width: 5em) {
+    .attendees .attendees-list h2 {
+        font-weight: 700;
+        margin-top: 1em;
+        margin-bottom: 0.5em;
+    }
+
+    .attendees .alumni {
+        width: 49.01961%;
+        float: left;
+        margin-right: 1.96078%
+    }
+
+    .attendees .alumni:nth-child(2n) {
+        float: right;
+        margin-right: 0;
+    }
+
+    .attendees .alumni .alumni-body {
+        width: 65.78947%;
+        float: right;
+        margin-right: 0;
+    }
+
+    .attendees .crop {
+        width: 31.57895%;
+        float: left;
+        margin-right: 2.63158%;
+        height: 31.57895%
+    }
+}
+
+@media (min-width: 30em) {
+    .attendees .alumni {
+        width: 32.46753%;
+        float: left;
+        margin-right: 1.2987%
+    }
+
+    .attendees .alumni:nth-child(2n) {
+        float: left;
+        margin-right: 1.2987%
+    }
+
+    .attendees .alumni:nth-child(3n) {
+        float: right;
+        margin-right: 0;
+    }
+
+    .attendees .crop {
+        width: 31.57895%;
+        float: left;
+        margin-right: 2.63158%;
+        height: 31.57895%
+    }
+}
+
+@media (min-width: 40em) {
+    .attendees {
+        width: 100%;
+        float: right;
+        margin-right: 0;
+    }
+
+    .attendees .alumni {
+        width: 24.27184%;
+        float: left;
+        margin-right: 0.97087%
+    }
+
+    .attendees .alumni:nth-child(2n) {
+        float: left;
+        margin-right: 0.97087%
+    }
+
+    .attendees .alumni:nth-child(3n) {
+        float: left;
+        margin-right: 0.97087%
+    }
+
+    .attendees .alumni:nth-child(4n) {
+        float: right;
+        margin-right: 0;
+    }
+
+    .attendees .crop {
+        width: 31.57895%;
+        float: left;
+        margin-right: 2.63158%;
+        height: 31.57895%
+    }
+
+    .attendees .attendees-list h2 {
+        font-size: 1.8em;
+        margin-bottom: 0.7em;
+    }
+
+    .attendees .attendees-list .yearBottomLine {
+        border-bottom: 1px solid #CCCCCC;
+        margin-bottom: 0.7em;
+    }
+}
+
+@media (min-width: 60em) {
+    .attendees {
+        width: 100%;
+        float: right;
+        margin-right: 0;
+    }
+
+    .attendees .alumni {
+        width: 24.51613%;
+        float: left;
+        margin-right: 0.64516%
+    }
+
+    .attendees .alumni:nth-child(2n) {
+        float: left;
+        margin-right: 0.64516%
+    }
+
+    .attendees .alumni:nth-child(3n) {
+        float: left;
+        margin-right: 0.64516%
+    }
+
+    .attendees .alumni:nth-child(4n) {
+        float: right;
+        margin-right: 0;
+    }
+
+    .attendees .alumni h4.name {
+        font-size: 1.250em;
+        line-height: 1.000em;
+        margin-bottom: 0.4em;
+    }
+
+    .attendees .crop {
+        width: 31.57895%;
+        float: left;
+        margin-right: 2.63158%;
+        height: 31.57895%
+    }
+}
+
+.lt-ie9 .attendees {
+    width: 100%;
+    float: right;
+    margin-right: 0;
+    *margin-left: -0.5em;
+    display: inline;
+}
+
+.lt-ie9 .attendees .alumni {
+    width: 24.51613%;
+    float: left;
+    margin-right: 0.64516%;
+    display: inline;
+}
+
+.lt-ie9 .attendees .alumni:nth-child(2n) {
+    float: left;
+    margin-right: 0.64516%;
+    *margin-left: auto;
+}
+
+.lt-ie9 .attendees .alumni:nth-child(3n) {
+    float: left;
+    margin-right: 0.64516%;
+    *margin-left: auto;
+}
+
+.lt-ie9 .attendees .alumni:nth-child(4n) {
+    float: right;
+    margin-right: 0;
+    *margin-left: -0.5em;
+    display: inline;
+}
+
+.lt-ie9 .attendees .alumni h4.name {
+    font-size: 1.250em;
+    line-height: 1.000em;
+    margin-bottom: 0.4em;
+}
+
+.lt-ie9 .attendees .crop {
+    width: 31.57895%;
+    float: left;
+    margin-right: 2.63158%;
+    display: inline;
+    height: 31.57895%
+}
+
+.suggested-event {
+    *zoom: 1;
+    margin-bottom: 1em;
+}
+
+.suggested-event:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.suggested-event h3 {
+    text-align: center;
+    font-size: 2.188em;
+    font-weight: 300;
+    line-height: 0.914em;
+    margin: 2em 0 0.914em;
+    clear: both;
+}
+
+.suggested-event .event-item {
+    text-align: center;
+    background-color: #f5f5f5;
+}
+
+.suggested-event .event-item h4 {
+    font-size: 1.5em;
+    line-height: 1.000em;
+    text-align: center;
+    margin: 1em 0 0.667em;
+    font-weight: 500;
+    min-height: 2em;
+}
+
+.suggested-event .event-item p.description {
+    text-align: left;
+    margin-left: 0.5em;
+    min-height: 5em;
+}
+
+.suggested-event .event-item p.date {
+    font-size: 1.25em;
+    margin: 1em .5em 2em;
+}
+
+.suggested-event .event-item h5 {
+    margin: 1em 0 0.5em;
+    color: #666;
+}
+
+.suggested-event .event-item .alumni {
+    text-align: center;
+    display: inline-block;
+    width: 5em;
+}
+
+.suggested-event .event-item .alumni .alumni-body {
+    display: none;
+}
+
+.suggested-event .event-item .alumni img.image {
+    width: 3.375em;
+    border-radius: 3.375em;
+}
+
+.suggested-event .event-item a:hover {
+    text-decoration: none;
+}
+
+@media (min-width: 40em) {
+    .suggested-event .event-item {
+        width: 49.51456%;
+        float: left;
+        margin-right: 0.97087%
+    }
+
+    .suggested-event .event-item:nth-child(2n) {
+        float: right;
+        margin-right: 0;
+        clear: both;
+    }
+}
+
+@media (min-width: 60em) {
+    .suggested-event {
+        width: 100%;
+        float: right;
+        margin-right: 0;
+    }
+
+    .suggested-event .event-item {
+        width: 32.90323%;
+        float: left;
+        margin-right: 0.64516%
+    }
+
+    .suggested-event .event-item:nth-child(3n) {
+        float: right;
+        margin-right: 0;
+    }
+
+    .suggested-event .event-item:nth-child(2n) {
+        float: left;
+        margin-right: 0.64516%;
+        clear: inherit;
+    }
+}
+
+.lt-ie9 .suggested-event {
+    width: 100%;
+    float: right;
+    margin-right: 0;
+    *margin-left: -0.5em;
+    display: inline;
+}
+
+.lt-ie9 .suggested-event .event-item {
+    width: 32.90323%;
+    float: left;
+    margin-right: 0.64516%;
+    display: inline;
+}
+
+.lt-ie9 .suggested-event .event-item:nth-child(3n) {
+    float: right;
+    margin-right: 0;
+    *margin-left: -0.5em;
+    display: inline;
+}
+
+.lt-ie9 .suggested-event .event-item:nth-child(2n) {
+    float: left;
+    margin-right: 0.64516%;
+    *margin-left: auto;
+    clear: inherit;
+}
+
+.main-info-block {
+    position: relative;
+    overflow: hidden;
+    color: #333;
+}
+
+.main-info-block .map-canvas {
+    width: 100%
+}
+
+.main-info-block .map-overlay {
+    position: absolute;
+    cursor: pointer;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+.main-info-block .info-container {
+    display: block;
+    position: relative;
+    padding: 2rem 1rem;
+    border-radius: 0 0 10px 10px;
+    background-color: #eee;
+}
+
+.main-info-block .info-container h3 {
+    margin-bottom: 1rem;
+}
+
+@media (min-width: 5em) {
+    .main-info-block .map-canvas {
+        padding-left: 22em;
+        height: 11em;
+    }
+
+    .main-info-block .info-container h3 {
+        font-size: 1.5rem;
+        line-height: 1.2rem;
+        font-weight: bold;
+    }
+
+    .main-info-block .info-container h4 {
+        margin-bottom: 1rem;
+    }
+
+    .main-info-block .info-container a.btn-main {
+        padding: 0.5em;
+        margin: 0;
+        font-size: 1em;
+    }
+}
+
+@media (min-width: 60em) {
+    .main-info-block {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .main-info-block .map-overlay {
+        border: solid white;
+        border-radius: 50%;
+        border-color: rgba(255, 255, 255, 0.75);
+        border-width: 50rem;
+        top: calc(-50rem + 50% - 100px);
+        left: calc(-50rem + 160px);
+        width: 200px;
+        height: 200px;
+        box-sizing: content-box;
+    }
+
+    .main-info-block .map-canvas {
+        height: 21em;
+    }
+
+    .main-info-block .info-container {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        margin-right: 0;
+        margin-left: 50.32258%;
+        padding: 0;
+        background: none;
+    }
+
+    .main-info-block .info-container .info-content a.btn-main {
+        font-size: 1.5em;
+        padding: 0.5em 1em;
+    }
+
+    .main-info-block .info-container .info-content h3.startDate {
+        font-size: 2.250em;
+        font-weight: 700;
+        margin-bottom: 0.5em;
+        line-height: 0.889em;
+    }
+
+    .main-info-block .info-container .info-content h4.location {
+        font-size: 2em;
+        font-weight: 300;
+    }
+
+    .main-info-block .info-container .info-content h5.time {
+        font-size: 1.125em;
+        line-height: 1.333em;
+    }
+}
+
+.lt-ie9 .main-info-block {
+    width: 100%;
+    float: right;
+    margin-right: 0;
+    *margin-left: -0.5em;
+    display: inline;
+}
+
+.lt-ie9 .main-info-block .map-canvas {
+    height: 21em;
+}
+
+.lt-ie9 .main-info-block .map-overlay {
+    top: -43em;
+    left: -37em;
+    height: 17em;
+    width: 17em;
+    border-width: 45em;
+}
+
+.lt-ie9 .main-info-block .info-container {
+    width: 49.67742%;
+    float: right;
+    margin-right: 0;
+    *margin-left: -0.5em;
+    display: inline;
+    margin-left: 50.32258%
+}
+
+.lt-ie9 .main-info-block .info-container .info-content a.btn-main {
+    margin-top: 1em;
+    font-size: 1.5em;
+    padding: 0.5em 1em;
+}
+
+.lt-ie9 .main-info-block .info-container .info-content h3.startDate {
+    font-size: 2.250em;
+    font-weight: 700;
+    margin-top: 2em;
+    margin-bottom: 0.5em;
+    line-height: 0.889em;
+}
+
+.lt-ie9 .main-info-block .info-container .info-content h4.location {
+    font-size: 2em;
+    font-weight: 300;
+    margin-top: .5em;
+}
+
+.lt-ie9 .main-info-block .info-container .info-content h5.time {
+    font-size: 1.125em;
+    margin-top: .5em;
+    line-height: 1.333em;
+}
+
+.gallery {
+    clear: both;
+    margin-top: 4em;
+}
+
+@media (min-width: 5em) {
+    .gallery img {
+        width: 23.52941%;
+        float: left;
+        margin-right: 1.96078%;
+        margin-bottom: .5em;
+    }
+
+    .gallery img:first-child {
+        width: 100%;
+        float: right;
+        margin-right: 0;
+    }
+
+    .gallery img:nth-child(5n) {
+        float: right;
+        margin-right: 0;
+    }
+}
+
+@media (min-width: 30em) {
+    .gallery img {
+        width: 23.2%;
+        margin-bottom: .5em;
+    }
+
+    .gallery img:first-child {
+        width: 100%;
+        float: right;
+        margin-right: 0;
+    }
+
+    .gallery img:nth-child(5n) {
+        float: left;
+        margin-right: 1.2987%;
+        margin-left: 0;
+    }
+}
+
+@media (min-width: 40em) {
+    .gallery img {
+        width: 11.65049%;
+        float: left;
+        margin-right: 0.97087%
+    }
+
+    .gallery img:first-child {
+        width: 74.75728%;
+        float: left;
+        margin-right: 0.97087%
+    }
+
+    .gallery img:nth-child(3n) {
+        float: right;
+        margin-right: 0;
+    }
+
+    .gallery img:nth-child(5n) {
+        float: right;
+        margin-right: 0;
+    }
+}
+
+@media (min-width: 60em) {
+    .gallery {
+        width: 83.22581%;
+        float: left;
+        margin-right: 0.64516%;
+        margin-left: 8.3871%
+    }
+
+    .gallery img {
+        width: 16.12903%;
+        float: left;
+        margin-right: 0.64516%
+    }
+
+    .gallery img:first-child {
+        width: 58.06452%;
+        float: left;
+        margin-right: 0.64516%
+    }
+
+    .gallery img:nth-child(3n) {
+        float: left;
+        margin-right: 0.64516%
+    }
+
+    .gallery img:nth-child(5n) {
+        float: left;
+        margin-right: 0.64516%
+    }
+}
+
+.lt-ie9 .gallery {
+    width: 83.22581%;
+    float: left;
+    margin-right: 0.64516%;
+    display: inline;
+    margin-left: 8.3871%
+}
+
+.lt-ie9 .gallery img {
+    width: 16.12903%;
+    float: left;
+    margin-right: 0.64516%;
+    display: inline;
+}
+
+.lt-ie9 .gallery img:first-child {
+    width: 58.06452%;
+    float: left;
+    margin-right: 0.64516%;
+    display: inline;
+}
+
+.lt-ie9 .gallery img:nth-child(3n) {
+    float: left;
+    margin-right: 0.64516%;
+    *margin-left: auto;
+}
+
+.lt-ie9 .gallery img:nth-child(5n) {
+    float: left;
+    margin-right: 0.64516%;
+    *margin-left: auto;
+}
+
+.event-image {
+    width: 550px;
+    height: 550px;
+    margin: 0 auto;
+    background: transparent url("/img/2018/logo/pasakumi.svg") no-repeat center/contain;
+}
+
+.event-image.image-cover {
+    background-size: cover;
+}
+
+.sakumlapa section.date {
+    font-size: 2.5rem;
+    font-weight: 100;
+    margin-bottom: 1rem;
+    text-align: left;
+    text-transform: uppercase;
+}
+
+.sakumlapa .block:hover {
+    text-decoration: none;
+}
+
+@media (min-width: 60em) {
+    .sakumlapa section h3 {
+        font-size: 1.750em;
+        line-height: 1.1429em;
+        margin-bottom: 1rem;
+    }
+}
+
+.lt-ie9 .sakumlapa section {
+    width: 100%;
+    float: right;
+    margin-right: 0;
+    *margin-left: -0.5em;
+    display: inline;
+}
+
+.lt-ie9 .sakumlapa section h3 {
+    font-size: 1.750em;
+    line-height: 1.1429em;
+    margin: 0.5714em;
+}
+
+.lt-ie9 .sakumlapa section p.date {
+    font-size: 1.875em;
+    line-height: 0.800em;
+    width: 20%;
+    float: left;
+    margin-right: 0.64516%;
+    display: inline;
+    text-align: right;
+    margin-top: 1.0667em;
+}
+
+.lt-ie9 .sakumlapa section .image {
+    width: 16.12903%;
+    float: left;
+    margin-right: 0.64516%;
+    display: inline;
+    position: relative;
+}
+
+.lt-ie9 .sakumlapa section .image:before {
+    position: absolute;
+    display: block;
+    content: "";
+    width: 0.2500em;
+    height: 7em;
+    background-color: #ccc;
+    bottom: -6.8em;
+    left: 3.15em;
+}
+
+.lt-ie9 .sakumlapa section .image img {
+    border: 0.25em solid #ccc;
+}
+
+.lt-ie9 .sakumlapa section.last-section .image:before {
+    display: none;
+}
+
+.lt-ie9 .sakumlapa section .event {
+    width: 49.67742%;
+    float: left;
+    margin-right: 0.64516%;
+    display: inline;
+}
+
+/*.lt-ie9 .sakumlapa section .event:before {
+   position: absolute;
+   display: block;
+   content: "";
+   width: 0;
+   height: 0;
+   left: -4.75em;
+   top: 2em;
+   border: 0.75em solid rgba(255, 255, 255, 0);
+   border-right-width: 4em;
+   }*/
+.paldies {
+    *zoom: 1;
+}
+
+.paldies:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.paldies h3 {
+    text-align: center;
+    font-size: 2.188em;
+    font-weight: 300;
+    line-height: 0.914em;
+    margin: 1em 0 0.914em;
+}
+
+.paldies h3 + h4 {
+    margin-top: 1em;
+}
+
+.paldies h4 {
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 1em;
+    margin-top: 2em;
+}
+
+.paldies section {
+    margin-bottom: 1em;
+}
+
+.paldies section .control-group {
+    min-height: 3em;
+    margin-bottom: 0.5em;
+}
+
+.paldies section .control-group p.help-block {
+    color: #999;
+}
+
+.paldies section .controls p strong {
+    font-weight: 400;
+}
+
+.paldies section label {
+    display: inline-block;
+    font-size: 1.25em;
+    font-weight: 300;
+    line-height: 1.2em;
+}
+
+.paldies ul.social {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    overflow: hidden;
+    *zoom: 1;
+    overflow: visible;
+    text-align: center;
+}
+
+.paldies ul.social li {
+    list-style-image: none;
+    list-style-type: none;
+    margin-left: 0;
+    display: -moz-inline-stack;
+    display: inline-block;
+    vertical-align: middle;
+    *vertical-align: auto;
+    zoom: 1;
+    *display: inline;
+    white-space: nowrap;
+    padding-left: 1.5em;
+    padding-right: 1.5em;
+}
+
+@media (min-width: 5em) {
+    .paldies input[type="text"] {
+        width: 100%
+    }
+}
+
+@media (min-width: 60em) {
+    .paldies section {
+        width: 100%;
+        float: right;
+        margin-right: 0;
+    }
+
+    .paldies label.control-label {
+        width: 32.90323%;
+        float: left;
+        margin-right: 0.64516%;
+        text-align: right;
+        margin-top: 0.5em;
+    }
+
+    .paldies .controls {
+        width: 66.45161%;
+        float: right;
+        margin-right: 0;
+    }
+
+    .paldies .controls > p:first-child {
+        margin-top: 0.5em;
+    }
+
+    .paldies .controls p {
+        font-size: 1.25em;
+        font-weight: 300;
+        line-height: 1.2em;
+        margin-left: 1em;
+    }
+}
+
+.lt-ie9 .paldies section {
+    width: 100%;
+    float: right;
+    margin-right: 0;
+    *margin-left: -0.5em;
+    display: inline;
+}
+
+.lt-ie9 .paldies label.control-label {
+    width: 32.90323%;
+    float: left;
+    margin-right: 0.64516%;
+    display: inline;
+    text-align: right;
+    margin-top: 0.5em;
+}
+
+.lt-ie9 .paldies .controls {
+    width: 66.45161%;
+    float: right;
+    margin-right: 0;
+    *margin-left: -0.5em;
+    display: inline;
+}
+
+.lt-ie9 .paldies .controls > p:first-child {
+    margin-top: 0.5em;
+}
+
+.lt-ie9 .paldies .controls p {
+    font-size: 1.25em;
+    font-weight: 300;
+    line-height: 1.2em;
+    margin-left: 1em;
+}
+
+/*
+   Vestures css
+ */
+.page-vesture {
+    padding: 0;
+}
+
+.page-vesture #wrapper,
+.page-vesture #left {
+    margin-top: .5rem;
+    padding: 2rem;
+    border-radius: .3rem .3rem 0 0;
+    text-align: justify;
+}
+
+.page-vesture .message {
+    margin-bottom: 0.2rem;
+}
+
+.page-vesture .historyTitle {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.page-vesture #left {
+    border-radius: 0;
+    background-color: #D5E6EA;
+}
+
+.page-vesture #left h4,
+.page-vesture #left ul {
+    margin: 0 auto;
+    padding: 0 2rem;
+    max-width: 64rem;
+}
+
+.page-vesture #left h4 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.page-vesture #flashcontent {
+    display: none;
+}
+
+/*
+   Organizatoru css
+ */
+.block {
+    display: block;
+    margin-bottom: 2rem;
+}
+
+.block .block-image {
+    display: block;
+    padding: 1rem 0;
+}
+
+.block .block-image img {
+    display: block;
+    width: 200px;
+    height: 200px;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: #111 1px solid;
+}
+
+.block .block-content {
+    display: block;
+    width: 100%;
+    position: relative;
+    padding: 20px;
+    border-radius: .3rem;
+    background-color: #A84D3A;
+    color: white;
+}
+
+.block .block-content p.description {
+    line-height: 1.5em;
+    text-align: justify;
+}
+
+.block .block-content h3 {
+    margin-bottom: 1rem;
+    font-size: 1.4rem;
+    text-align: center;
+}
+
+@media (min-width: 60em) {
+    .block {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+    }
+
+    .block .block-image {
+        position: relative;
+        padding: 0 1rem 0 0;
+        z-index: 2;
+        box-sizing: content-box;
+
+        flex-grow: 0;
+        flex-shrink: 0;
+    }
+
+    .block .block-image img {
+        height: 250px;
+        width: 250px;
+    }
+
+    .block .block-content {
+        height: 250px;
+        max-width: 90%;
+    }
+
+    .block .block-content h3 {
+        text-align: left;
+    }
+}
+
+.lt-ie9 .organizatori section .image {
+    width: 16.12903%;
+    float: left;
+    margin-right: 0.64516%;
+    display: inline;
+    margin-left: 16.77419%
+}
+
+.lt-ie9 .organizatori section .person {
+    width: 66.45161%;
+    float: right;
+    margin-right: 0;
+    *margin-left: -0.5em;
+    display: inline;
+}
+
+.lt-ie9 .organizatori section .person h3 {
+    font-size: 1.7500em;
+    line-height: 0.8571em;
+    margin: 0.5714em;
+}
+
+.lt-ie9 .organizatori section .person h3 a {
+    font-size: 0.5714em;
+    color: white;
+    font-weight: 300;
+}
+
+.lt-ie9 .organizatori section .person:before {
+    display: block;
+    left: -3.75em;
+    top: 2em;
+    border: 0.75em solid rgba(255, 255, 255, 0);
+    border-right-width: 3em;
+    border-right-style: solid;
+    border-right-color: #e07547;
+}
+
+.rekordi section {
+    clear: both;
+    *zoom: 1;
+    margin-bottom: 2em;
+}
+
+.rekordi section:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.rekordi .image img {
+    width: 7em;
+    height: 7em;
+    border-radius: 7em;
+}
+
+.rekordi .person {
+    color: white;
+    border-radius: .3em;
+    position: relative;
+    background-color: #FF6633;
+}
+
+.rekordi .person:before {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 0;
+    border: 0.75em solid rgba(255, 255, 255, 0);
+    border-right-width: 1em;
+}
+
+.rekordi .person h3 a {
+    padding-left: 1em;
+}
+
+.rekordi .person p.description {
+    line-height: 1.5em;
+    margin: 0 1em 1em;
+}
+
+.rekordi .person ul {
+    margin: 1em;
+}
+
+.rekordi .person ul li {
+    margin: 1em;
+}
+
+@media (min-width: 60em) {
+    .rekordi section .image {
+        width: 16.12903%;
+        float: left;
+        margin-right: 0.64516%;
+        margin-left: 16.77419%
+    }
+
+    .rekordi section .person {
+        width: 66.45161%;
+        float: right;
+        margin-right: 0;
+    }
+
+    .rekordi section .person h3 {
+        font-size: 1.7500em;
+        line-height: 0.8571em;
+        margin: 0.5714em;
+    }
+
+    .rekordi section .person h3 a {
+        font-size: 0.5714em;
+        color: white;
+        font-weight: 300;
+    }
+
+    .rekordi section .person:before {
+        display: block;
+        left: -3.75em;
+        top: 2em;
+        border: 0.75em solid rgba(255, 255, 255, 0);
+        border-right-width: 3em;
+        border-right-style: solid;
+        border-right-color: #FF6633;
+    }
+}
+
+.lt-ie9 .rekordi section .image {
+    width: 16.12903%;
+    float: left;
+    margin-right: 0.64516%;
+    display: inline;
+    margin-left: 16.77419%
+}
+
+.lt-ie9 .rekordi section .person {
+    width: 66.45161%;
+    float: right;
+    margin-right: 0;
+    *margin-left: -0.5em;
+    display: inline;
+}
+
+.lt-ie9 .rekordi section .person h3 {
+    font-size: 1.7500em;
+    line-height: 0.8571em;
+    margin: 0.5714em;
+}
+
+.lt-ie9 .rekordi section .person h3 a {
+    font-size: 0.5714em;
+    color: white;
+    font-weight: 300;
+}
+
+.lt-ie9 .rekordi section .person:before {
+    display: block;
+    left: -3.75em;
+    top: 2em;
+    border: 0.75em solid rgba(255, 255, 255, 0);
+    border-right-width: 3em;
+    border-right-style: solid;
+    border-right-color: #e07547;
+}
+
+footer {
+    clear: both;
+    padding-bottom: 2rem;
+    background-color: #555;
+}
+
+footer .wtf-block {
+    width: 100%;
+    text-align: center;
+    font-size: 0.8750em;
+    line-height: 1.1429em;
+}
+
+footer .wtf-block a {
+    text-decoration: none;
+    display: inline-block;
+    padding-bottom: 1rem;
+}
+
+footer .wtf-block a img {
+    display: block;
+    margin: 0 auto;
+}
+
+footer .wtf-block a:hover span.icon-wtf {
+    text-decoration: none;
+}
+
+footer .wtf-block a:hover span {
+    text-decoration: underline;
+}
+
+footer .wtf-block span.icon-wtf {
+    display: block;
+    font-size: 3em;
+    color: #222;
+}
+
+footer .wtf-block span {
+    color: #fff;
+}
+
+.supporters {
+    text-align: center;
+}
+
+.supporters h3 {
+    color: #fefefe;
+    background-color: #555;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding: 1rem 0;
+}
+
+.supporters a {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.supporters a img {
+    padding: 1rem;
+    max-height: 80px;
+    background: #fefefe;
+}
+
+.supporters .marquee {
+    background: #fefefe;
+}
+
+@media (min-width: 60em) {
+    .footer {
+        padding-bottom: 4rem;
+    }
+
+    .supporters {
+        width: 100%;
+        overflow: hidden;
+        top: 0;
+        right: 0;
+    }
+
+    .supporters .marquee {
+        position: relative;
+        left: 0;
+        top: 0;
+    }
+
+    .supporters h3 {
+        position: relative;
+        padding: 1.5em 0;
+
+        font-size: 1.4rem;
+        z-index: 1;
+    }
+
+    .supporters a img {
+        max-height: 100px;
+    }
+}
+
+.hide {
+    display: none !important;
+}
+
+.show {
+    display: block !important;
+}
+
+strong {
+    font-weight: bold;
+}
