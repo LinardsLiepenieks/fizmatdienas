@@ -9,6 +9,11 @@ body {
     ;
 }
 
+.bgimg {
+    -webkit-animation: fadeInBottom 2s;
+
+}
+
 
 
 
@@ -28,7 +33,7 @@ body {
 
 .logo,
 .main-title {
-    -webkit-animation: fadein 2s;
+    -webkit-animation: fadein 0.5s;
 
 }
 
@@ -50,6 +55,18 @@ body {
     0% {
         opacity: 0;
         transform: translateX(-30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes fadeInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
     }
 
     100% {
