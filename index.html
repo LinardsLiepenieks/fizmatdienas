@@ -12,6 +12,7 @@
     <link href="./css/main.css" media="all" rel="stylesheet">
     <link rel="stylesheet" href="./css/newStyles.css">
     <link rel="stylesheet" href="./css/animations.css">
+    <link rel="stylesheet" href="./css/screenMediaQueries.css">
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
@@ -121,93 +122,68 @@
     ---->
 
         <!--- calendar roadmap - main content --->
-        <div class="background-right">
+        <main>
+            <div class="background-right">
 
-        </div>
-        <main class="main-content pt-5">
-
-            <div class="w-100 d-flex justify-content-start desc-container m-1">
-                <div class="desc  text-start p-3"> <b>Parasti šādās mājaslapās ir anotācija/ paskaidrojums ar to, kas tas vispār ir, bet ja nevajag tad principā pohuj</b> <br>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a pretium tortor. Donec est neque, consequat ac sodales id, tincidunt eget nulla. Vivamus at vehicula enim. Phasellus scelerisque risus eget augue gravida accumsan. Morbi laoreet euismod purus, et iaculis libero fringilla nec. Mauris arcu sapien, sagittis consectetur malesuada non, lobortis et urna. Phasellus lacinia vel tellus ut consectetur. Cras in lectus in sem convallis rhoncus. Sed eu arcu ac lectus congue tempor. Aenean porttitor at nulla eget pharetra. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis et quam nec nunc convallis pulvinar ac vitae urna. Etiam ac velit tortor. Donec a facilisis dolor.
-                </div>
             </div>
+            <main class="main-content pt-5">
 
-
-            <!--calendar--->
-            <div class="w-100  d-flex justify-content-center">
-                <div class="w-50 mt-5 mb-5">
-                    <div id="accordion">
-
-                        <ul class="calendar-list">
-                            <li>
-                                <div class="">
-                                    <div class="card-header-style" id="headingOne">
-                                        <h5 class="mb-0 d-flex align-content-middle">
-                                            <button class="li-text" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                                Pasākuma nosaukums <span class="event-date">datums</span>
-                                            </button>
-
-
-                                        </h5>
-                                    </div>
-
-                                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion" style="border-left: 2px solid white;">
-                                        <div class="card-body d-flex justify-content-start">
-                                            <div class="col-4">
-                                                <img class="rounded mx-auto event-picture" src="./img/pasākumi_img/gajiens2021.png">
-                                            </div>
-                                            <div class="event-desc col">
-                                                <p>Pavasaris rit pilnā sparā un tā vien sauc izbaudīt dabu. Dienā, kad parasti tiktos ar oranžiem plakātiem Rīgas centrā, aicinām iziet 3.14 km garā pastaigā un tās laikā parādīt savu Fizmatiskumu (vai tas būtu izveidot kādā interesantā veidā uzrakstu "Fizmati", saukt saukļus vai vienkārši būt oranžiem). Ja vēlies pretendēt uz kādu balviņu, publicē pastaigu savā Facebook kontā, atzīmējot Fizmatdienu un FMOF SP lapas.
-
-                                                </p>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-
-                            </li>
-
-                        </ul>
-
-                        <ul class="calendar-list">
-                            <li>
-                                <div class="">
-                                    <div class="card-header-style" id="headingTwo">
-                                        <h5 class="mb-0 d-flex align-content-middle">
-                                            <button class="li-text" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                                Pasākuma nosaukums <span class="event-date">datums</span>
-                                            </button>
-
-
-                                        </h5>
-                                    </div>
-
-                                    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion" style="border-left: 2px solid white;">
-                                        <div class="card-body d-flex justify-content-start">
-                                            <div class="col-4">
-                                                <img class="rounded mx-auto event-picture" src="./img/pasākumi_img/gajiens2021.png">
-                                            </div>
-                                            <div class="event-desc col">
-                                                <p>Pavasaris rit pilnā sparā un tā vien sauc izbaudīt dabu. Dienā, kad parasti tiktos ar oranžiem plakātiem Rīgas centrā, aicinām iziet 3.14 km garā pastaigā un tās laikā parādīt savu Fizmatiskumu (vai tas būtu izveidot kādā interesantā veidā uzrakstu "Fizmati", saukt saukļus vai vienkārši būt oranžiem). Ja vēlies pretendēt uz kādu balviņu, publicē pastaigu savā Facebook kontā, atzīmējot Fizmatdienu un FMOF SP lapas.
-
-                                                </p>
-                                            </div>
-                                        </div>
-
-                                    </div>
-                                </div>
-
-                            </li>
-
-                        </ul>
-
-
-
-
+                <div class="w-100 d-flex justify-content-start desc-container m-1">
+                    <div class="desc  text-start p-3"> <b>Parasti šādās mājaslapās ir anotācija/ paskaidrojums ar to, kas tas vispār ir, bet ja nevajag tad principā pohuj</b> <br>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut a pretium tortor. Donec est neque, consequat ac sodales id, tincidunt eget nulla. Vivamus at vehicula enim. Phasellus scelerisque risus eget augue gravida accumsan. Morbi laoreet euismod purus, et iaculis libero fringilla nec. Mauris arcu sapien, sagittis consectetur malesuada non, lobortis et urna. Phasellus lacinia vel tellus ut consectetur. Cras in lectus in sem convallis rhoncus. Sed eu arcu ac lectus congue tempor. Aenean porttitor at nulla eget pharetra. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Duis et quam nec nunc convallis pulvinar ac vitae urna. Etiam ac velit tortor. Donec a facilisis dolor.
                     </div>
                 </div>
-            </div>
+
+
+                <!--calendar--->
+                <div class="w-100  d-flex justify-content-center ">
+                    <div class="calendar-wrapper mt-5 mb-5">
+                        <div id="accordion">
+
+                            <ul class="calendar-list">
+                                <li>
+                                    <div class="w-100 li-text-wrapper">
+                                        <div class="card-header-style" id="headingOne">
+                                            <h5 class="mb-0 d-flex justify-content-center">
+                                                <button class="li-text" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                                    Pasākuma nosaukums <span class="event-date">datums</span>
+                                                </button>
+
+
+                                            </h5>
+                                        </div>
+                                    </div>
+                                    <div>
+
+                                        <div class="w-100 d-flex justify-content-center">
+
+
+                                            <div id="collapseOne" class="collapse event-wrapper" aria-labelledby="headingOne" data-parent="#accordion" style="border-left: 2px solid white;">
+                                                <div class=" card-body justify-content-center inner-event-wrapper">
+                                                    <div class=" event-picture-wrapper">
+                                                        <img class="rounded mx-auto event-picture" src="./img/pasākumi_img/gajiens2021.png">
+                                                    </div>
+                                                    <div class="event-desc">
+                                                        <p>Pavasaris rit pilnā sparā un tā vien sauc izbaudīt dabu. Dienā, kad parasti tiktos ar oranžiem plakātiem Rīgas centrā, aicinām iziet 3.14 km garā pastaigā un tās laikā parādīt savu Fizmatiskumu (vai tas būtu izveidot kādā interesantā veidā uzrakstu "Fizmati", saukt saukļus vai vienkārši būt oranžiem). Ja vēlies pretendēt uz kādu balviņu, publicē pastaigu savā Facebook kontā, atzīmējot Fizmatdienu un FMOF SP lapas.
+
+                                                        </p>
+                                                    </div>
+                                                </div>
+
+                                            </div>
+                                        </div>
+                                    </div>
+                                </li>
+
+                            </ul>
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+            </main>
 
             <!--- organizers--->
             <div class="organizers-background">
@@ -432,14 +408,14 @@
                     <span>Palīdzējām datu apstrādē</span>
                 </a>
             </div>
+
+            <div id="c">Veidoja Linards Liepenieks 2022</div>
+
         </footer>
 
 
 
 
 
-
     </div>
-</body>
-
-</html>
+</body></html>

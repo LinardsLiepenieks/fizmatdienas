@@ -66,8 +66,11 @@ body {
     font-size: 50px;
     text-shadow: 3px 3px 11px rgba(150, 150, 150, 0.72);
     transition-timing-function: linear;
-    transition: all 1s ease;
+    transition: all 0.3s ease;
 }
+
+
+
 
 .organizer-wrapper:hover {
     background-color: rgba(150, 150, 150, 1);

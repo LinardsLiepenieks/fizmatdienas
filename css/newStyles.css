@@ -104,7 +104,6 @@ body {
     right: 0;
     width: 60vw;
     height: 60vw;
-    z-index: 0;
     background-repeat: no-repeat;
 }
 
@@ -129,8 +128,15 @@ body {
     font-size: 40;
     position: relative;
     top: 5px;
-    transition: all 1s ease-out;
+    transition: all 0.2s ease-out;
 
+}
+
+.li-text-wrapper {
+    display: flex;
+    justify-content: flex-start;
+    left: 7vw;
+    position: relative;
 }
 
 .event-date {
@@ -143,17 +149,30 @@ body {
 
 }
 
-.event-picture {
-
-    object-fit: contain;
+.calendar-wrapper {
     width: 100%;
+    position: relative;
+}
 
+.event-wrapper {
+    background: rgba(85, 85, 85, .06);
+    width: 80%
+}
+
+.event-picture {
+    width: 100%;
 }
 
 .event-desc {
     color: white;
     font-size: 15pt;
-    background: rgba(85, 85, 85, .05);
+    background: rgba(85, 85, 85, .6);
+    top: 0;
+    left: 0;
+    width: 70%;
+    padding-left: 10px;
+    padding-top: 5px;
+    border-radius: 10px
 }
 
 .organizers-title {
@@ -164,12 +183,20 @@ body {
 
 .all-organizers {
     display: table;
-    padding-left: 1em;
     width: 100%;
     vertical-align: middle;
     height: 100%;
     text-align: center;
     z-index: 2;
+}
+
+.inner-event-wrapper {
+    width: 100%;
+    display: flex;
+}
+
+.event-picture-wrapper {
+    width: 30%;
 }
 
 .organizer-wrapper {
@@ -182,6 +209,7 @@ body {
     padding: 20px;
     display: inline-block;
     z-index: 2;
+    position: relative;
 
 }
 

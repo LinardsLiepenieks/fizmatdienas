@@ -1,0 +1,113 @@
+@media screen and (max-width: 800px) {
+
+    /* width */
+    ::-webkit-scrollbar {
+        width: 5px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+        background: lightgray;
+    }
+
+    /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: #888;
+    }
+
+    /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #555;
+    }
+
+    .desc {
+        font-size: 15px;
+        overflow: scroll;
+        overflow-x: hidden;
+    }
+
+    .desc-container {
+        height: 50vw;
+    }
+
+    .calendar-wrapper {
+        width: 120%;
+    }
+
+    .event-wrapper {
+        width: 100%;
+        display: block;
+
+    }
+
+    .calendar-list {
+        padding: 20px;
+        display: block;
+    }
+
+    .inner-event-wrapper {
+        display: block;
+    }
+
+    .li-text {
+        font-size: 25px;
+    }
+
+    .li-text:hover {
+        font-size: 30px;
+    }
+
+    .event-date {
+        font-size: 20px;
+        display: block;
+    }
+
+
+    .li-text-wrapper {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        left: 0;
+    }
+
+    .event-picture-wrapper {
+        width: 100%;
+    }
+
+    .event-desc {
+        text-align: start;
+        width: 100%;
+        padding-left: 20px;
+        padding-bottom: 5px;
+        height: 350px;
+        overflow: scroll;
+        overflow-x: hidden;
+
+
+    }
+
+    .organizer-wrapper {
+        width: 90%;
+    }
+
+    .organizer-desc {
+        font-size: 18px;
+        height: 150px;
+        overflow: scroll;
+        overflow-x: hidden;
+    }
+
+    .sponsor-wrapper {
+        padding: 2px;
+        width: 20%;
+    }
+
+    #c {
+        float: right;
+        color: #555;
+        font-size: 5px;
+    }
+
+
+
+}
