@@ -287,3 +287,14 @@ body {
     z-index: 2;
 
 }
+
+#c {
+    color: black;
+    font-size: 15px;
+    margin: 0;
+    padding: 3px;
+}
+
+footer {
+    padding: 0;
+}

@@ -45,6 +45,11 @@
         display: block;
     }
 
+    .calendar-title {
+        color: white;
+        text-shadow: -0.5px -0.5px 0 #555, 0.5px -0.5px 0 #555, -0.5px 0.5px 0 #555, 0.5px 1px 0 #555;
+    }
+
     .inner-event-wrapper {
         display: block;
     }
@@ -102,11 +107,7 @@
         width: 20%;
     }
 
-    #c {
-        float: right;
-        color: #555;
-        font-size: 5px;
-    }
+
 
 
 
