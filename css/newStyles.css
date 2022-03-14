@@ -118,6 +118,18 @@ body {
     padding: none;
     color: white;
     font-size: 70;
+    position: relative;
+    vertical-align: baseline;
+}
+
+.calendar-title {
+    color: white;
+    position: relative;
+    text-shadow: -0.5px -0.5px 0 #555, 0.5px -0.5px 0 #555, -0.5px 0.5px 0 #555, 0.5px 1px 0 #555;
+    left: 50;
+    margin: 0;
+    padding: 0;
+
 }
 
 .li-text {
@@ -126,8 +138,6 @@ body {
     border: none;
     font-weight: 600;
     font-size: 40;
-    position: relative;
-    top: 5px;
     transition: all 0.2s ease-out;
 
 }
