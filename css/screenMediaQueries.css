@@ -22,7 +22,7 @@
 
     .desc {
         font-size: 15px;
-        overflow: scroll;
+        overflow: auto;
         overflow-x: hidden;
     }
 
@@ -85,7 +85,7 @@
         padding-left: 20px;
         padding-bottom: 5px;
         height: 350px;
-        overflow: scroll;
+        overflow: auto;
         overflow-x: hidden;
 
 
@@ -98,7 +98,7 @@
     .organizer-desc {
         font-size: 18px;
         height: 150px;
-        overflow: scroll;
+        overflow: auto;
         overflow-x: hidden;
     }
 
